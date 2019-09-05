@@ -1,33 +1,45 @@
 <template>
-  <Layout>
-    
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-    
-    <h1>Hello, world!</h1>
-   
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
+    <Layout>
+        <div>
+            <div class="bg-homepage-image h-screen text-white ">
+                <div class="relative flex-grow flex w-full items-center h-full">
+                    <div class="absolute bg-black opacity-50 inset-0 z-0"></div>
+                    <div class="flex-grow text-center font-sans font-bold relative z-10">
+                        <h4 class="">Hello !</h4>
+                        <h2 class="text-3xl">Photographer</h2>
+                        <ul class="list-disc uppercase text-left inline-block tracking-wider text-sm flex items-center justify-center flex-wrap">
+                            <li class="ml-8">Photographer</li>
+                            <li class="ml-8">Designer</li>
+                            <li class="ml-8">Developer</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink pr-3 justify-center flex flex-col z-10">
+                        <div class="h-32 w-12 relative flex items-center justify-center">
+                            <div class="absolute border-l border-white h-full"></div>
+                        </div>
+                        <img class="py-2" src='https:icon.now.sh/lock/17/ffffff' alt='chevron icon'/>
+                        <img class="py-2" src='https:icon.now.sh/lock/17/ffffff' alt='chevron icon'/>
+                        <img class="py-2" src='https:icon.now.sh/lock/17/ffffff' alt='chevron icon'/>
+                        <img class="py-2" src='https:icon.now.sh/lock/17/ffffff' alt='chevron icon'/>
+                        <img class="py-2" src='https:icon.now.sh/lock/17/ffffff' alt='chevron icon'/>
+                        <div class="h-32 w-12 relative flex items-center justify-center">
+                            <div class="absolute border-l border-white h-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
-  </Layout>
+            <div class="bg-white w-full">
+                sdf
+            </div>
+        </div>
+    </Layout>
 </template>
 
 <script>
-export default {
-  metaInfo: {
-    title: 'Hello, world!'
-  }
-}
+    export default {
+        metaInfo: {
+            title: 'Hello, world!'
+        }
+    }
 </script>
-
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>
