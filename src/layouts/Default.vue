@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header id="header" class="w-full h-12 fixed z-10">
+        <header id="header" class="w-full h-12 fixed z-20">
             <nav class="w-full bg-black text-white flex flex-wrap items-center">
                 <div class="flex-shrink flex items-center ml-3 h-12 font-sans block">
                     <h2 class="font-bold uppercase text-lg">{{ $static.metaData.siteName }}</h2>

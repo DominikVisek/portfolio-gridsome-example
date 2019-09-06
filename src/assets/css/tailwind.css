@@ -5,4 +5,5 @@
 .bg-homepage-image{
     background-image: url('~@/assets/images/slider-bg1.jpg');
     @apply bg-center;
+    @apply bg-cover;
 }
