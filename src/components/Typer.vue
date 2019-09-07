@@ -12,7 +12,9 @@
                 indexOfData: 0,
                 isReverseProcess: false,
                 text: "",
-                typedText: ""
+                typedText: "",
+                intervalId: 0,
+                timeoutId: 0
             }
         },
         props: {
@@ -24,6 +26,11 @@
                 type: Number,
                 required: false,
                 default: 60
+            },
+            preEraseTimeout: {
+                type: Number,
+                required: false,
+                default: 3000
             },
             eraseOnComplete: {
                 type: Boolean,
@@ -37,8 +44,9 @@
         },
         methods: {
             startTimer: function () {
+                clearTimeout(this.timeoutId);
                 const self = this;
-                setInterval(function () {
+                this.intervalId = setInterval(function () {
                     self.process();
                 }, this.typedSpeed);
             },
@@ -47,18 +55,24 @@
                 if (!isSuccess) {
                     if (this.eraseOnComplete && !this.isReverseProcess) {
                         this.isReverseProcess = true;
+                        this.processPreEraseTimout()
                     } else {
                         this.nextSentence();
                         if (this.eraseOnComplete) {
                             this.isReverseProcess = false;
                         }
                     }
-
-                    this.process();
                 }
             },
+            processPreEraseTimout: function(){
+                clearInterval(this.intervalId);
+                let selfInstance = this;
+                this.timeoutId = setTimeout(function () {
+                    selfInstance.startTimer();
+                }, this.preEraseTimeout);
+            },
             nextSentence: function () {
-                var text = this.typedTexts[this.indexOfData];
+                let text = this.typedTexts[this.indexOfData];
                 if (!text) {
                     this.indexOfData = 0;
                 }
@@ -67,7 +81,7 @@
                 this.indexOfData++;
             },
             typeLetter: function () {
-                var letter = this.typedText.charAt(this.indexOfSentence);
+                let letter = this.typedText.charAt(this.indexOfSentence);
 
                 if (letter) {
                     this.text += letter;
@@ -79,7 +93,7 @@
                 return false;
             },
             removeLastTypedLetter: function () {
-                var letter = this.typedText.charAt(this.indexOfSentence - 1);
+                let letter = this.typedText.charAt(this.indexOfSentence - 1);
 
                 if (letter) {
                     this.text = this.text.slice(0, -1);
@@ -90,10 +104,6 @@
 
                 return false;
             },
-            reset: function () {
-                this.indexOfSentence = 0;
-                this.text = "";
-            }
         }
     }
 </script>
