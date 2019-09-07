@@ -156,6 +156,14 @@
                     </basic-box>
                 </div>
             </div>
+
+            <div class="bg-white w-full relative mt-40 px-4">
+                <h4 class="text-center uppercase text-2xl font-bold m-12 md:text-3xl">Contact</h4>
+
+                <div class="md:flex md:w-10/12 md:m-auto md:flex-wrap md:items-center md:justify-center">
+
+                </div>
+            </div>
         </div>
     </Layout>
 </template>
