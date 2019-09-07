@@ -7,7 +7,7 @@
                     <div class="relative flex-grow flex w-full items-end">
                         <div class="flex-grow text-center font-sans font-bold relative z-10">
                             <h4 class="md:text-3xl">Hello !</h4>
-                            <h2 class="text-3xl mb-6 md:text-6xl">Photographer</h2>
+                            <h2 class="text-3xl mb-6 md:text-6xl"><typer v-bind:typed-texts="['Who am i?', 'I am developer', 'designer', 'photograph']"></typer></h2>
                             <ul class="list-disc uppercase text-left inline-block tracking-wider text-sm flex items-center justify-center flex-wrap">
                                 <li class="ml-8">Photographer</li>
                                 <li class="ml-8">Designer</li>
@@ -82,22 +82,22 @@
                 <h4 class="text-center uppercase text-2xl font-bold m-12 md:text-3xl">My skill</h4>
                 <div class="w-full md:w-10/12 md:flex md:flex-wrap md:items-center md:justify-center md:m-auto">
                     <div class="w-11/12 mt-12 md:w-5/12">
-                        <skill-progress-bar class="md:pr-4" percentage="95" title="Web Design"></skill-progress-bar>
+                        <skill-progress-bar class="md:pr-4" v-bind:percentage=95 title="Web Design"></skill-progress-bar>
                     </div>
                     <div class="w-11/12 mt-12 md:w-5/12">
-                        <skill-progress-bar class="md:pl-4" percentage="85" title="Web Development"></skill-progress-bar>
+                        <skill-progress-bar class="md:pl-4" v-bind:percentage=85 title="Web Development"></skill-progress-bar>
                     </div>
                     <div class="w-11/12 mt-12 md:w-5/12">
-                        <skill-progress-bar class="md:pr-4" percentage="90" title="PHP & MySQL"></skill-progress-bar>
+                        <skill-progress-bar class="md:pr-4" v-bind:percentage=90 title="PHP & MySQL"></skill-progress-bar>
                     </div>
                     <div class="w-11/12 mt-12 md:w-5/12">
-                        <skill-progress-bar class="md:pl-4" percentage="70" title="SEO Marketing"></skill-progress-bar>
+                        <skill-progress-bar class="md:pl-4" v-bind:percentage=70 title="SEO Marketing"></skill-progress-bar>
                     </div>
                     <div class="w-11/12 mt-12 md:w-5/12">
-                        <skill-progress-bar class="md:pr-4" percentage="62" title="Photography"></skill-progress-bar>
+                        <skill-progress-bar class="md:pr-4" v-bind:percentage=62 title="Photography"></skill-progress-bar>
                     </div>
                     <div class="w-11/12 mt-12 md:w-5/12">
-                        <skill-progress-bar class="md:pl-4" percentage="68" title="Online Marketing"></skill-progress-bar>
+                        <skill-progress-bar class="md:pl-4" v-bind:percentage=68 title="Online Marketing"></skill-progress-bar>
                     </div>
                 </div>
             </div>
@@ -107,52 +107,52 @@
 
                 <div class="md:flex md:w-10/12 md:m-auto md:flex-wrap md:items-center md:justify-center">
                     <basic-box class="md:w-1/3" title="Web Design">
-                        <icon-slot slot="iconSlot">
+                        <template slot="iconSlot">
                             <img class="flex-shrink" src='https:icon.now.sh/email/999999/45' alt='email icon'/>
-                        </icon-slot>
-                        <textSlot slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
+                        </template>
+                        <template slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
                             sed do eiusmod incididunt awesome. morem is the creative service
-                        </textSlot>
+                        </template>
                     </basic-box>
                     <basic-box class="md:w-1/3" title="Web Design">
-                        <icon-slot slot="iconSlot">
+                        <template slot="iconSlot">
                             <img class="flex-shrink" src='https:icon.now.sh/email/999999/45' alt='email icon'/>
-                        </icon-slot>
-                        <textSlot slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
+                        </template>
+                        <template slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
                             sed do eiusmod incididunt awesome. morem is the creative service
-                        </textSlot>
+                        </template>
                     </basic-box>
                     <basic-box class="md:w-1/3" title="Web Design">
-                        <icon-slot slot="iconSlot">
+                        <template slot="iconSlot">
                             <img class="flex-shrink" src='https:icon.now.sh/email/999999/45' alt='email icon'/>
-                        </icon-slot>
-                        <textSlot slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
+                        </template>
+                        <template slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
                             sed do eiusmod incididunt awesome. morem is the creative service
-                        </textSlot>
+                        </template>
                     </basic-box>
                     <basic-box class="md:w-1/3" title="Web Design">
-                        <icon-slot slot="iconSlot">
+                        <template slot="iconSlot">
                             <img class="flex-shrink" src='https:icon.now.sh/email/999999/45' alt='email icon'/>
-                        </icon-slot>
-                        <textSlot slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
+                        </template>
+                        <template slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
                             sed do eiusmod incididunt awesome. morem is the creative service
-                        </textSlot>
+                        </template>
                     </basic-box>
                     <basic-box class="md:w-1/3" title="Web Design">
-                        <icon-slot slot="iconSlot">
+                        <template slot="iconSlot">
                             <img class="flex-shrink" src='https:icon.now.sh/email/999999/45' alt='email icon'/>
-                        </icon-slot>
-                        <textSlot slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
+                        </template>
+                        <template slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
                             sed do eiusmod incididunt awesome. morem is the creative service
-                        </textSlot>
+                        </template>
                     </basic-box>
                     <basic-box class="md:w-1/3" title="Web Design">
-                        <icon-slot slot="iconSlot">
+                        <template slot="iconSlot">
                             <img class="flex-shrink" src='https:icon.now.sh/email/999999/45' alt='email icon'/>
-                        </icon-slot>
-                        <textSlot slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
+                        </template>
+                        <template slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
                             sed do eiusmod incididunt awesome. morem is the creative service
-                        </textSlot>
+                        </template>
                     </basic-box>
                 </div>
             </div>
@@ -164,6 +164,7 @@
     import ButtonLink from '../components/ButtonLink';
     import SkillProgressBar from '../components/SkillProgressBar';
     import BasicBox from '../components/BasicBox';
+    import Typer from '../components/Typer';
 
     export default {
         metaInfo: {
@@ -172,7 +173,8 @@
         components: {
             ButtonLink,
             SkillProgressBar,
-            BasicBox
+            BasicBox,
+            Typer
         }
     }
 </script>
