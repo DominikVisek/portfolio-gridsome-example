@@ -6,8 +6,8 @@
                     <div class="absolute bg-black opacity-50 inset-0 z-0"></div>
                     <div class="relative flex-grow flex w-full items-end">
                         <div class="flex-grow text-center font-sans font-bold relative z-10">
-                            <h4 class="">Hello !</h4>
-                            <h2 class="text-3xl mb-6">Photographer</h2>
+                            <h4 class="md:text-3xl">Hello !</h4>
+                            <h2 class="text-3xl mb-6 md:text-6xl">Photographer</h2>
                             <ul class="list-disc uppercase text-left inline-block tracking-wider text-sm flex items-center justify-center flex-wrap">
                                 <li class="ml-8">Photographer</li>
                                 <li class="ml-8">Designer</li>
