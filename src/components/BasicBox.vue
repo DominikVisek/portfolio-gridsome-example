@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-col">
-        <div class="flex flex-col items-center m-4 py-8">
+    <div class="flex flex-col hover:shadow-outline">
+        <div class="flex flex-col items-center m-4 py-8 hover:shadow-outline">
             <slot name="iconSlot"></slot>
             <h3 class="flex-shrink text-xl font-bold mt-3">{{title}}</h3>
             <p class="flex-shrink text-gray-550 text-center text-sm mt-3">
