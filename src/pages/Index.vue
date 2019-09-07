@@ -75,7 +75,7 @@
             </div>
 
             <div class="bg-white w-full relative mt-40 px-4">
-                <h4 class="text-center uppercase text-2xl font-bold m-12">MY skill</h4>
+                <h4 class="text-center uppercase text-2xl font-bold m-12">My skill</h4>
                 <div class="w-11/12">
                     <skill-progress-bar percentage="95" title="Web Design"></skill-progress-bar>
                 </div>
@@ -86,14 +86,67 @@
                     <skill-progress-bar percentage="90" title="PHP & MySQL"></skill-progress-bar>
                 </div>
                 <div class="w-11/12 mt-12">
-                    <skill-progress-bar percentage="50" title="SEO Marketing"></skill-progress-bar>
+                    <skill-progress-bar percentage="70" title="SEO Marketing"></skill-progress-bar>
                 </div>
                 <div class="w-11/12 mt-12">
-                    <skill-progress-bar percentage="40" title="Photography"></skill-progress-bar>
+                    <skill-progress-bar percentage="62" title="Photography"></skill-progress-bar>
                 </div>
                 <div class="w-11/12 mt-12">
-                    <skill-progress-bar percentage="75" title="Online Marketing"></skill-progress-bar>
+                    <skill-progress-bar percentage="68" title="Online Marketing"></skill-progress-bar>
                 </div>
+            </div>
+
+            <div class="bg-white w-full relative mt-40 px-4">
+                <h4 class="text-center uppercase text-2xl font-bold m-12">Service</h4>
+
+                <basic-box title="Web Design">
+                    <icon-slot slot="iconSlot">
+                        <img class="flex-shrink" src='https:icon.now.sh/email/999999/45' alt='email icon'/>
+                    </icon-slot>
+                    <textSlot slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
+                        sed do eiusmod incididunt awesome. morem is the creative service
+                    </textSlot>
+                </basic-box>
+                <basic-box title="Web Design">
+                    <icon-slot slot="iconSlot">
+                        <img class="flex-shrink" src='https:icon.now.sh/email/999999/45' alt='email icon'/>
+                    </icon-slot>
+                    <textSlot slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
+                        sed do eiusmod incididunt awesome. morem is the creative service
+                    </textSlot>
+                </basic-box>
+                <basic-box title="Web Design">
+                    <icon-slot slot="iconSlot">
+                        <img class="flex-shrink" src='https:icon.now.sh/email/999999/45' alt='email icon'/>
+                    </icon-slot>
+                    <textSlot slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
+                        sed do eiusmod incididunt awesome. morem is the creative service
+                    </textSlot>
+                </basic-box>
+                <basic-box title="Web Design">
+                    <icon-slot slot="iconSlot">
+                        <img class="flex-shrink" src='https:icon.now.sh/email/999999/45' alt='email icon'/>
+                    </icon-slot>
+                    <textSlot slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
+                        sed do eiusmod incididunt awesome. morem is the creative service
+                    </textSlot>
+                </basic-box>
+                <basic-box title="Web Design">
+                    <icon-slot slot="iconSlot">
+                        <img class="flex-shrink" src='https:icon.now.sh/email/999999/45' alt='email icon'/>
+                    </icon-slot>
+                    <textSlot slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
+                        sed do eiusmod incididunt awesome. morem is the creative service
+                    </textSlot>
+                </basic-box>
+                <basic-box title="Web Design">
+                    <icon-slot slot="iconSlot">
+                        <img class="flex-shrink" src='https:icon.now.sh/email/999999/45' alt='email icon'/>
+                    </icon-slot>
+                    <textSlot slot="text">Lorem ipsum dolor sit amet, conse adipisi elit,
+                        sed do eiusmod incididunt awesome. morem is the creative service
+                    </textSlot>
+                </basic-box>
             </div>
         </div>
     </Layout>
@@ -102,6 +155,7 @@
 <script>
     import ButtonLink from '../components/ButtonLink';
     import SkillProgressBar from '../components/SkillProgressBar';
+    import BasicBox from '../components/BasicBox';
 
     export default {
         metaInfo: {
@@ -109,7 +163,8 @@
         },
         components: {
             ButtonLink,
-            SkillProgressBar
+            SkillProgressBar,
+            BasicBox
         }
     }
 </script>
