@@ -60,14 +60,19 @@
                         this.nextSentence();
                         if (this.eraseOnComplete) {
                             this.isReverseProcess = false;
+                        } else {
+                            this.processPreEraseTimout();
                         }
                     }
                 }
             },
-            processPreEraseTimout: function(){
+            processPreEraseTimout: function () {
                 clearInterval(this.intervalId);
                 let selfInstance = this;
                 this.timeoutId = setTimeout(function () {
+                    if(!selfInstance.eraseOnComplete){
+                        selfInstance.resetSentenceData();
+                    }
                     selfInstance.startTimer();
                 }, this.preEraseTimeout);
             },
@@ -104,6 +109,10 @@
 
                 return false;
             },
+            resetSentenceData: function () {
+                this.indexOfSentence = 0;
+                this.text="";
+            }
         }
     }
 </script>
