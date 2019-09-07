@@ -165,6 +165,7 @@
     import SkillProgressBar from '../components/SkillProgressBar';
     import BasicBox from '../components/BasicBox';
     import Typer from '../components/Typer';
+    import CountUp from '../components/CountUp';
 
     export default {
         metaInfo: {
@@ -174,7 +175,8 @@
             ButtonLink,
             SkillProgressBar,
             BasicBox,
-            Typer
+            Typer,
+            CountUp
         }
     }
 </script>

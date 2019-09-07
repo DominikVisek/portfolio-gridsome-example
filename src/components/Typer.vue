@@ -5,18 +5,6 @@
 <script>
     export default {
         name: "Typer",
-        data() {
-            return {
-                pauseTimer: false,
-                indexOfSentence: 0,
-                indexOfData: 0,
-                isReverseProcess: false,
-                text: "",
-                typedText: "",
-                intervalId: 0,
-                timeoutId: 0
-            }
-        },
         props: {
             typedTexts: {
                 type: Array,
@@ -36,6 +24,18 @@
                 type: Boolean,
                 required: false,
                 default: true
+            }
+        },
+        data() {
+            return {
+                pauseTimer: false,
+                indexOfSentence: 0,
+                indexOfData: 0,
+                isReverseProcess: false,
+                text: "",
+                typedText: "",
+                intervalId: 0,
+                timeoutId: 0
             }
         },
         mounted: function () {
