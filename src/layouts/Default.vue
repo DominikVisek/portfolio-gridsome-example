@@ -1,12 +1,12 @@
 <template>
     <div>
-        <header id="header" class="w-full h-12 fixed z-20">
-            <nav class="w-full bg-black text-white flex flex-wrap items-center">
+        <header id="header" class="w-full h-12 fixed z-20 ">
+            <nav class="w-full bg-black text-white flex flex-wrap items-center md:h-24 md:bg-gray-900">
                 <div class="flex-shrink flex items-center ml-3 h-12 font-sans block">
-                    <h2 class="font-bold uppercase text-lg">{{ $static.metaData.siteName }}</h2>
+                    <h2 class="font-bold uppercase text-lg md:text-2xl ml-8">{{ $static.metaData.siteName }}</h2>
                 </div>
                 <div class="flex-grow block"></div>
-                <div class="flex-shrink m-3">
+                <div class="flex-shrink m-3 md:hidden">
                     <button class="flex items-center px-3 py-2 rounded" @click="isMenuExpanded = !isMenuExpanded">
                         <svg v-if="! isMenuExpanded" class="fill-current h-5 w-5" viewBox="0 0 20 20"
                              xmlns="http://www.w3.org/2000/svg">
@@ -17,10 +17,10 @@
                     </button>
                 </div>
 
-                <div class="w-full block flex-grow bg-white text-gray-800 uppercase"
+                <div class="w-full flex-grow bg-white text-gray-800 uppercase md:flex md:w-auto md:justify-end md:bg-gray-900 md:text-white md:mr-4"
                      v-bind:class="{'hidden': ! isMenuExpanded}">
-                    <div class="text-xs">
-                        <a class="block border-b py-3 px-5 font-sans font-bold" v-for="menuItem in menuItems"
+                    <div class="text-xs md:flex">
+                        <a class="block border-b py-3 px-5 font-sans font-bold md:border-none" v-for="menuItem in menuItems"
                            :href="menuItem.url">{{menuItem.name}}</a>
                     </div>
                 </div>
