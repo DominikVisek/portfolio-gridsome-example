@@ -1,7 +1,7 @@
 const tailwindcss = require('tailwindcss');
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Porfolio',
   css: {
     loaderOptions: {
       postcss: {

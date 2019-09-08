@@ -177,7 +177,7 @@
 
     export default {
         metaInfo: {
-            title: 'Hello, world!'
+            title: 'Portfolio page!'
         },
         components: {
             ButtonLink,
