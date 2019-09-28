@@ -20,5 +20,16 @@ module.exports = {
         config: './tailwind.config.js',
       }
     },
+    {
+      use: 'gridsome-source-graphql',
+      options: {
+        url: process.env.CRAFT_API_URL,
+        fieldName: 'unite',
+        typeName: 'unite',
+        headers: {
+          Authorization: process.env.CRAFT_API_TOKEN,
+        }
+      }
+    }
   ]
 };

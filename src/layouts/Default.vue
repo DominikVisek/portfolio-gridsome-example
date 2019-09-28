@@ -51,7 +51,14 @@
 
 <static-query>
     query {
-    metaData {
+    findPages {
+    result {
+    id
+    textwis
+    headline
+    }
+    },
+    metadata {
     siteName
     }
     }
